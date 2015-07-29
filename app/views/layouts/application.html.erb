@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<% unless current_user.nil?%>
+  <h2>
+    <%= link_to 'login', logout_path, :class => 'logout_button' %>
+  </h2>
+<% end %>
+
+
 <%= yield %>
 
 </body>
