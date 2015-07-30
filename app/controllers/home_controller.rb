@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   def marker_positions
     change_positions
-    sleep 2
+    sleep 0.5
     @positions = Rails.cache.read(:markers)
   end
 
